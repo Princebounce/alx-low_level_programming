@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc test.c
+gcc -c $CFILE
