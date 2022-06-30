@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 /**
- *main - to be called
- *return:0 for the int
+ * main - prints the string
+ *return:0 if program exits properly
  */
-int main (void)
+int main(void)
 {
 	printf("with proper grammar, but the outcome is a piece of art,\n");
 	return (0);
