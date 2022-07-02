@@ -1,33 +1,37 @@
+#include <stdlib.h>
+#include <time.h>
 #include <stdio.h>
 
 /**
- *main - Prints 3 combination of numbers
+ *main - Task 1 print the last digit of the number stored in the variable n
  *
- *Return: Always (Success)
+ *Return: 0
  */
+
 int main(void)
-{
-	int c, i, k;
+{	int ch;
+	int n;
+	int m;
 
-	for (c = '0'; c <= '9'; c++)
+	for (ch = 48; ch <= 57; ch++)
 	{
-	for (i = '0'; i <= '9'; i++)
+	for (n = 49; n <= 57; n++)
 	{
-	for (k = '0'; k <= '9'; k++)
+	for (m = 50; m <= 57; m++)
 	{
+	if (n > ch && m > n)
+	{ putchar(ch);
+	putchar(n);
+	putchar(m);
+	if (ch != 55 || n != 56 || m != 57)
+	{ putchar(44);
+	putchar(32); }
+			}
+			}
+			}
+			}
 
-	if (c < i && i < k) 
-	{ putchar(c);
-		putchar(i);
-		putchar(k);
-		if (c != '7')
-		{ putchar(',');
-		putchar(' ');
-		}
-	}
-	}
-	}
-	}
-putchar('\npri
-return (0);
+	putchar(10);
+
+	return (0);
 }
