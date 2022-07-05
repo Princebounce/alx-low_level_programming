@@ -1,0 +1,16 @@
+#include "main.h"
+/**
+ * print_alphabet - process alphabets in lower case
+ *
+ * Return : 0 (Success)
+ *
+ */
+void print_alphabet(void)
+{
+	char x;
+	for (x = 'a'; x <= 'z'; x++)
+	{
+		_putchar(x);
+	}
+	_putchar(x);
+}
