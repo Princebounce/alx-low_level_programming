@@ -7,12 +7,12 @@
  *
  */
 
-void print_alphabet_x10()
+void print_alphabet_x10(void)
 {
 	char x;
 	int a = 0;
 
-	while (a < 10)
+	while (a++ < 10)
 
 	{
 		
@@ -22,6 +22,5 @@ void print_alphabet_x10()
 			_putchar(x);
 		}
 		_putchar('\n');
-		a++;
 	}
 }
