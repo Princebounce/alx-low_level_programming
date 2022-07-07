@@ -24,7 +24,7 @@ divisor++;
 }
 }
 
-printf("%lin", quotient);
+printf("%li\n", quotient);
 
 return (0);
 }
