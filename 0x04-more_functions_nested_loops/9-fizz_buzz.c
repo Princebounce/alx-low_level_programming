@@ -1,4 +1,4 @@
-#include main.h
+#include "main.h"
 #include <stdio.h>
 
 /**
@@ -14,18 +14,18 @@ int n;
 for (n = 1; n < 101; n++)
 {
 if (n % 5 == 0 && n % 3 == 0)
-printf(FizzBuzz );
+printf("FizzBuzz ");
 else if (n % 5 == 0)
 if (n == 100)
-printf(Buzz);
+printf("Buzz");
 else
-printf(Buzz );
+printf("Buzz ");
 else if (n % 3 == 0)
-printf(Fizz );
+printf("Fizz ");
 else
-printf(%d , n);
+printf("%d" , n);
 }
-printf(n);
+printf("\n");
 
 return (0);
 }
