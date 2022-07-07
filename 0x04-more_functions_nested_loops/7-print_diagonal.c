@@ -16,12 +16,12 @@ for (sp = 0; sp < n; sp++)
 {
 for (sl = 0; sl < sp; sl++)
 {
-_putchar( );
+_putchar(' ');
 }
-_putchar(\);
-_putchar(n);
+_putchar("\\");
+_putchar("\n");
 }
 }
 if (n <= 0)
-_putchar(n);
+_putchar("\n");
 }
