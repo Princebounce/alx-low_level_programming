@@ -1,1 +1,1 @@
-Recursion exercises
+Basic C programming 
