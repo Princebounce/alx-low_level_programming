@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * helper - Finds the square root of two numbers
  *
@@ -17,7 +18,7 @@ int helper(int a, int b)
 		return (b);
 
 	else
-		return (int helper(a, b + 1));
+		return (helper(a, b + 1));
 
 		return (1);
 }
@@ -34,5 +35,5 @@ int _sqrt_recursion(int n)
 {
 	if (n == 0)
 		return (0);
-		return (int helper(n, 1));
+		return (int (n, 1));
 }
