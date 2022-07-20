@@ -10,16 +10,16 @@
 
 int helper(int a, int b)
 {
-if (b * b > a)
-	return (-1);
+	if (b * b > a)
+		return (-1);
 
-else if (b * b == a)
-	return (b);
+	else if (b * b == a)
+		return (b);
 
-else
-	return (helper(a, b + 1));
+	else
+		return (helper(a, b + 1));
 
-	return (1);
+		return (1);
 }
 
 /**
@@ -30,9 +30,9 @@ else
  * Return: the square root of @n
  */
 
-  int _sqrt_recursion(int n)
+int _sqrt_recursion(int n)
 {
-if (n == 0)
-	return (0);
-	return (helper(n, 1));
+	if (n == 0)
+		return (0);
+		return (helper(n, 1));
 }
