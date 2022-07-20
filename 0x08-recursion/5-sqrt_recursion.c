@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * helper - Finds the square root of two numbers
+ * find_sqrt - Finds the square root of two numbers
  *
  * @x: The number
  * @y: The number to test for the square root of @a
@@ -11,16 +11,16 @@
 
 int find_sqrt(int x, int y)
 {
-if (y * y > x)
-	return (-1);
+	if (y * y > x)
+		return (-1);
 
-else if (y * y == x)
-	return (y);
+	else if (y * y == x)
+		return (y);
 
-else
-	return (find_sqrt(x, y + 1));
+	else
+		return (find_sqrt(x, y + 1));
 
-	return (1);
+		return (1);
 }
 
 /**
