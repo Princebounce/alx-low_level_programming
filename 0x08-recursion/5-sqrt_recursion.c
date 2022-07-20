@@ -1,43 +1,39 @@
 #include "main.h"
 
-int find_sqrt(int x, int y);
-int _sqrt_recursion(int n);
-
 /**
- * find_sqrt - Finds the natural square root of n
- * @x: The number to find the square root of
- * @y: The root to be tested.
+ * helper - Finds the square root of two numbers
  *
- * Return: If the number has a natural square root - the square root.
- *         If the number does not have a natural square root - -1.
+ * @x: The number
+ * @y: The number to test for the square root of @a
+ *
+ * Return: square root
  */
+
 int find_sqrt(int x, int y)
 {
-if ((y * y) == x)
-	return (y);
-
-if ((y * y) != x)
+if (y * y > x)
 	return (-1);
 
+else if (y * y == x)
+	return (y);
+
+else
 	return (find_sqrt(x, y + 1));
+
+	return (1);
 }
 
 /**
- * _sqrt_recursion - Returns the natural square root of a number.
- * @n: The number to return the square root of.
+ * _sqrt_recursion - returns the natural square root of a number
  *
- * Return: If n has a natural square root - the natural square root of n.
- *         If n does not have a natural square root - -1.
+ * @n: the number to return the square root of
+ *
+ * Return: the square root of @n
  */
+
 int _sqrt_recursion(int n)
 {
-int y = 0;
-
-if (n < 0)
-	return (-1);
-
-if (n == 1)
-	return (1);
-
-	return (find_sqrt(n, y));
+if (n == 0)
+	return (0);
+	return (find_sqrt(n, 1));
 }
