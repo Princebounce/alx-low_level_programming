@@ -13,12 +13,17 @@ int findprime(int a, int b)
 {
 if (a <= 1 || a % b == 0)
 	return (0);
-else if (a == b)
-	return (1);
+
+else
+	if (a == b)
+
+		return (1);
+
 else if (a > b)
+
 	findprime(a, b + 1);
 
-	return (1);
+		return (1);
 }
 
 /**
