@@ -1,26 +1,26 @@
 #include "main.h"
 
 /**
- * find_sqrt - Finds the square root of two numbers
+ * helper - Finds the square root of two numbers
  *
- * @x: The number
- * @y: The number to test for the square root of @a
+ * @a: The number
+ * @b: The number to test for the square root of @a
  *
  * Return: square root
  */
 
-int find_sqrt(int x, int y)
+int helper(int a, int b)
 {
-	if (y * y > x)
-		return (-1);
+  if (b * b > a)
+    return (-1);
 
-	else if (y * y == x)
-		return (y);
+  else if (b * b == a)
+    return (b);
 
-	else
-		return (find_sqrt(x, y + 1));
+  else
+    return (helper(a, b + 1));
 
-		return (1);
+  return (1);
 }
 
 /**
@@ -33,7 +33,7 @@ int find_sqrt(int x, int y)
 
 int _sqrt_recursion(int n)
 {
-if (n == 0)
-	return (0);
-	return (find_sqrt(n, 1));
+  if (n == 0)
+    return (0);
+  return (helper(n, 1));
 }

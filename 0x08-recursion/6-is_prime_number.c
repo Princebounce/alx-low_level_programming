@@ -1,43 +1,39 @@
 #include "main.h"
 
-int is_divisible(int num, int div);
-int is_prime_number(int n);
-
 /**
- * is_divisible - Checks if a number is divisible.
- * @num: The number to be checked.
- * @div: The divisor.
+ * helper - Finds the square root of two numbers
  *
- * Return: If the number is divisible - 0.
- *         If the number is not divisible - 1.
+ * @a: The number
+ * @b: The number to test for the square root of @a
+ *
+ * Return: square root
  */
-int is_divisible(int num, int div)
+
+int helper(int a, int b)
 {
-if (num % div == 0)
-	return (0);
+  if (b * b > a)
+    return (-1);
 
-	if (div == num / 2)
-	return (1);
+  else if (b * b == a)
+    return (b);
 
-	return (is_divisible(num, div + 1));
+  else
+    return (helper(a, b + 1));
+
+  return (1);
 }
 
 /**
- * is_prime_number - Checks if a number is prime.
- * @n: The number to be checked.
+ * _sqrt_recursion - returns the natural square root of a number
  *
- * Return: If the integer is not prime - 0.
- *         If the number is prime - 1.
+ * @n: the number to return the square root of
+ *
+ * Return: the square root of @n
  */
-int is_prime_number(int n)
+
+int _sqrt_recursion(int n)
 {
-int div = 2;
-
-if (n <= 1)
-	 return (0);
-
-if (n >= 2 && n <= 3)
-	return (1);
-
-	return (is_divisible(n, div));
+  if (n == 0)
+    return (0);
+  return (helper(n, 1));
 }
