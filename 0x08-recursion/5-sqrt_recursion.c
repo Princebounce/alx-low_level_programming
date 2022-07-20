@@ -1,39 +1,39 @@
 #include "main.h"
 
 /**
- * helper - Finds the square root of two numbers
+ * findroot - Finds the square root of two numbers
  *
- * @a: The number
- * @b: The number to test for the square root of @a
+ * @x: number
+ * @y: root of @x
  *
  * Return: square root
  */
 
-int helper(int a, int b)
+int findroot(int x, int y)
 {
-  if (b * b > a)
-    return (-1);
+if (y * y > x)
+	return (-1);
 
-  else if (b * b == a)
-    return (b);
+else if (y * y == x)
+	return (y);
 
-  else
-    return (helper(a, b + 1));
+else
+	return (findroot(x, y + 1));
 
-  return (1);
+	return (1);
 }
 
 /**
  * _sqrt_recursion - returns the natural square root of a number
  *
- * @n: the number to return the square root of
+ * @n: number to return the square root of
  *
- * Return: the square root of @n
+ * Return: square root of @n
  */
 
 int _sqrt_recursion(int n)
 {
-  if (n == 0)
-    return (0);
-  return (helper(n, 1));
+if (n == 0)
+	return (0);
+	return (findroot(n, 1));
 }
