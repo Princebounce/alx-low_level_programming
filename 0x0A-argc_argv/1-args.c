@@ -11,12 +11,12 @@
 
 int main(int argc, char *argv[])
 {
-  int c;
-  (void)argv;
+	int c;
+	(void)argv;
 
-  for (c = 0; c <= argc; c++)
-    {}
-  printf("%d\n", c - 2);
+for (c = 0; c <= argc; c++)
+	{}
+	printf("%d\n", c - 2);
 
-  return (0);
+	return (0);
 }
