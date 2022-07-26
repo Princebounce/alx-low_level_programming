@@ -1,4 +1,4 @@
-#include main.h
+#include "main.h"
 #include <stdlib.h>
 
 /**
@@ -7,8 +7,8 @@
  * @s2: The string to be concatenated to s1.
  *
  * Return: If concatenation fails - NULL.
- *         Otherwise - a pointer the newly-allocated space in memory
- *                     containing the concatenated strings.
+ * Otherwise - a pointer the newly-allocated space in memory
+ * containing the concatenated strings.
  */
 char *str_concat(char *s1, char *s2)
 {
