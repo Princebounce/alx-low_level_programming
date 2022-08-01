@@ -8,9 +8,9 @@
  */
 struct dog
 {
-  char *name;
-  float age;
-  char *owner;
+char *name;
+float age;
+char *owner;
 };
 /**
  * typedef dog_t - defines a new name for type struct dog
